@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # purchase-project
 
 > A Vue.js project
@@ -19,3 +20,7 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+=======
+# ch-duocai
+Changhong do pick special
+>>>>>>> d9d9c9e566fe39753091cc630453060f59d48bab
