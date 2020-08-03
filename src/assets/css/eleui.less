@@ -1,0 +1,118 @@
+// 弹窗的样式重写
+.v-modal {
+  pointer-events: none;
+}
+.el-message-box__wrapper {
+  pointer-events: none;
+  .el-message-box {
+    pointer-events: auto;
+    border-radius:0px;
+    .el-message-box__header {
+      text-align: center;
+      padding: 0px;
+      .el-message-box__title {
+        height: 44px;
+        line-height: 44px;
+        background: #f7f7f7;
+      }
+      .el-message-box__headerbtn {
+        top: 8px;
+        .el-message-box__close {
+          font-size: 22px;
+        }
+      }
+    }
+    .el-message-box__container {
+      text-align: center;
+      padding-top: 20px;
+      .el-message-box__status {
+        font-size: 70px !important;
+        position: static;
+        transform: none;
+      }
+      .el-message-box__message {
+        text-align: center;
+        font-weight: 400;
+        color: rgba(60, 62, 68, 1);
+        margin-top: 24px;
+        margin-bottom: 28px;
+      }
+      // warning
+      .el-icon-warning {
+        width: 72px;
+        height: 65px;
+        background: url("../../../static/images/alert.png");
+      }
+      .el-icon-warning:before {
+        content: "";
+      }
+      // success
+      .el-icon-success {
+        width: 72px;
+        height: 65px;
+        background: url("../../../static/images/success.png");
+      }
+      .el-icon-success:before {
+        content: "";
+      }
+    }
+    .el-message-box__btns {
+      text-align: center;
+      .el-button{
+        border-radius:0px;
+      }
+      span {
+        font-size: 14px;
+      }
+    }
+    .el-message-box__btns button:nth-child(2) {
+      margin-left: 20px;
+    }
+    .el-message-box__status + .el-message-box__message {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  .el-message-box__btns {
+    margin-bottom: 20px;
+  }
+}
+.elesign-wrap {
+  .el-dialog__wrapper {
+    pointer-events: none;
+    .el-dialog {
+      pointer-events: auto;
+    }
+    .el-dialog--center .el-dialog__body {
+      padding: 0px;
+    }
+    .el-dialog__header {
+      padding: 0px;
+      height: 44px;
+      line-height: 44px;
+      background: #f7f7f7;
+      .el-dialog__title {
+        font-size: 16px;
+        color: #6d6d6d;
+      }
+      .el-icon-close {
+        font-size: 20px;
+        top: 12px;
+      }
+    }
+    .el-dialog__headerbtn {
+      top: 12px;
+    }
+  }
+  .el-form-item__error {
+    font-size: 14px;
+  }
+}
+.elesign-wrap{
+  .el-input__inner{
+    border-radius:0px;
+  }
+  .el-button{
+    border-radius:0px;
+  }
+}

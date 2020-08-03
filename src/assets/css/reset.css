@@ -1,0 +1,257 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+input, select, textarea {
+	vertical-align: middle;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, value, placeholder {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 14px;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html,body{
+	height: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	font-size: 14px;
+	color: #575757;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+}
+
+a {
+	color: #575757;
+	text-decoration: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+.clearfix:after {
+	content: "\20";
+	clear: both;
+	display: block;
+}
+
+input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	resize: none;
+	border-radius: 0;
+}
+
+/* 去掉input number类型加减按钮 */
+input[type='number']{
+	-moz-appearance:textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+/* pc浏览器浏览移动项目样式处理 */
+.pc_style{
+	width: 640px !important;
+	margin: 0 auto;
+	/* left: 50% !important;
+	margin-left: -260px !important; */
+}
+.pc_width {
+	width: 640px !important;
+}
+
+/* 解决弹层滚动穿透 */
+body.dialog-open {
+	position: fixed;
+	width: 100%;
+}
+
+/* 底部菜单 */
+
+.public_pad {
+	padding-bottom: 1rem;
+}
+
+
+/* 头部间距1 */
+
+.between {
+	margin-top: 1.66rem;
+}
+
+
+/* 头部间距2 */
+
+.between-space {
+	margin-top: 0.88rem;
+}
+
+
+/* 复选框 */
+
+.mui-checkbox {
+	appearance: none;
+	position: relative;
+	width: 22px;
+	height: 22px;
+	/* margin-left: 0.33rem; */
+	background-color: #ffffff;
+	border: solid 1px #d9d9d9;
+	background-clip: padding-box;
+	display: inline-block;
+	border-radius: 100%;
+}
+
+.mui-checkbox:focus {
+	outline: 0 none;
+	outline-offset: -0.02rem;
+}
+
+.mui-checkbox:checked {
+	border: solid 1px #ff8523;
+	background: #ff8523;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mui-checkbox:checked:before {
+	/* display: inline-block; */
+	display: block;
+	margin-top: 0.01rem;
+	/* margin-right: 0.01rem; */
+	font-family: iconfont;
+	content: "\e63a";
+	color: #fff;
+	font-size: 0.3rem;
+}
+
+/* 不可点击复选框 */
+
+.mui-checkbox-disable {
+	appearance: none;
+	position: relative;
+	width: 22px;
+	height: 22px;
+	/* margin-left: 0.33rem; */
+	background-color: #f5f5f5;
+	border: solid 1px #d9d9d9;
+	background-clip: padding-box;
+	display: inline-block;
+	border-radius: 100%;
+}
+
+/* tab */
+
+.tabs-tab {
+	position: relative
+}
+
+.tabs-tab:after {
+	content: '';
+	display: block;
+	height: 2px;
+	background: #3089ed;
+	margin: 0 auto;
+	width: 0;
+	transition: all .5s
+}
+
+.tabs-tab.active:after {
+	width: 60%
+}
+
+
+/* .active {
+    color: #3089ed !important;
+	} */
+
+
+/* 进度条 */
+
+.progress {
+	height: 0.1rem;
+	border-radius: 0.4rem;
+	background: #eee;
+	position: relative;
+}
+
+.progress-color {
+	height: 100%;
+	border-radius: 0.4rem;
+	background: #ff8523;
+	position: absolute;
+	left: 0;
+	z-index: 10;
+}
+
+
+/* 遮罩 */
+
+.common_dialog {
+	position: fixed;
+	background: rgba(0, 0, 0, 0.5);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 200;
+}
+.common_none_dialog {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 66;
+}
+
+/* 阿里symbol图标通用样式 */
+.icon {
+	width: 1em; 
+	height: 1em; 
+	vertical-align: -0.15em; 
+	fill: currentColor; 
+	overflow: hidden;
+}

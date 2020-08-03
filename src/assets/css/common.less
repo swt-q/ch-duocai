@@ -1,0 +1,63 @@
+@big-color: #252525;
+@little-color:#353535;
+@dialog-color:#333;
+@inter:#FFD3AF;
+@orange:#FF9D4F;
+@blue:#2E88ED;
+@one-size: 20px;
+@two-size: 16px;
+@three-size: 14px;
+@all-width: 1200px;
+
+// flex布局
+.v-flex (@justify: center, @align: center) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+// 水平垂直居中
+.v-center (@width, @height) {
+  width: @width;
+  height: @height;
+  line-height: @height;
+  text-align: center;
+}
+
+// 溢出隐藏
+.v-ellipsis (@clamp: 1) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: @clamp;
+  overflow: hidden;
+}
+.blue{
+    color:#2e88ed;
+}
+.orange{
+    color:#ff8523;
+}
+//---修改input font颜色
+.input_p::-webkit-input-placeholder { /* WebKit browsers 适配谷歌 */
+  color: #6E7B8B !important;
+}
+ .input_p:-moz-placeholder { /* Mozilla Firefox 4 to 18 适配火狐 */
+  color: #6E7B8B !important;
+}
+ .input_p::-moz-placeholder { /* Mozilla Firefox 19+ 适配火狐 */
+  color: #6E7B8B !important;
+}
+ .input_p:-ms-input-placeholder { /* Internet Explorer 10+  适配ie*/
+  color: #6E7B8B !important;
+}
+.input_p{
+  color: #6E7B8B !important;
+}
+
+//table选中样式修改
+ .container .el-table__body tr.current-row>td,.requireList .el-table__body tr.current-row>td{
+  background-color: #f6f6f6 !important;
+}
+.el-table--enable-row-hover .el-table__body tr:hover>td {
+  background-color: #f6f6f6;
+}
